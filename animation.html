@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A Minecraft Animated Website Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .hero{
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbWlqinxzMmpQWquKqWEojNYQHtWD3rFa2rQ:https://mrwallpaper.com/images/hd/download-minecraft-wallpaper-97xm1w3j69a4wmzb-2.jpg&usqp=CAU);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .zombies img{
+            width:50px;
+            animation: zombie 7s linear infinite;
+        }
+
+        .zombies{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: absolute;
+            bottom: -75px;
+        }
+        @keyframes zombie{
+            0%{
+                transform: translateY(0);
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+            }
+            70%{
+                opacity: 1;
+            }
+            100%{
+                transform: translateY(-80vh);
+                opacity: 0;
+            }
+        }
+        .zombies img:nth-child(1){
+            animation-delay: 2s;
+            width: 150px;
+        }
+        .zombies img:nth-child(2){
+            animation-delay: 1s;
+            width: 100px;
+        }
+        .zombies img:nth-child(3){
+            animation-delay: 3s;
+            width: 200px;
+        }
+        .zombies img:nth-child(4){
+            animation-delay: 4.5s;
+            width: 100px
+        }
+        .zombies img:nth-child(5){
+            animation-delay: 3s;
+            width: 110px;
+        }
+        .zombies img:nth-child(6){
+            animation-delay: 6s;
+            width: 400px;
+        }
+        .zombies img:nth-child(7){
+            animation-delay: 7s;
+            width: 100px;
+        }
+    </style>
+    </head>
+    <body>
+    <div class="hero">
+        <div class="zombies">
+            <img src="https://freepngimg.com/thumb/minecraft/24181-3-creeper-transparent-image.png">
+            <img src="https://freepngimg.com/download/minecraft/9-2-minecraft-zombie-png.png">
+            <img src="https://freepngimg.com/download/minecraft/18-2-minecraft-skeleton-png.png">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/535b6309-97a8-45fe-b748-56c1e325c7e8/de65m1w-fbc1fbc8-0282-4f9e-935c-ee2c473d3be5.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUzNWI2MzA5LTk3YTgtNDVmZS1iNzQ4LTU2YzFlMzI1YzdlOFwvZGU2NW0xdy1mYmMxZmJjOC0wMjgyLTRmOWUtOTM1Yy1lZTJjNDczZDNiZTUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.HNRmdBuEWCVA5hgMAifeLwaOYVMyH0KrF0mU01iLzOI">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/24380413-e6af-442b-bd6e-d9b8ec6eec67/deqxed0-22b39011-03d7-4731-9afe-90a2442f496c.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI0MzgwNDEzLWU2YWYtNDQyYi1iZDZlLWQ5YjhlYzZlZWM2N1wvZGVxeGVkMC0yMmIzOTAxMS0wM2Q3LTQ3MzEtOWFmZS05MGEyNDQyZjQ5NmMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.YzEhSDhb3Lweof0PCXIkfWNyW2Qd3wR7KHctJjGpwxM">
+            <img src="https://media.tenor.com/KYazdk0t35UAAAAi/minecraft-ghast.gif">
+            <img src="https://media.tenor.com/eIKd6FhIcAIAAAAi/minecraft-blaze.gif">
+        </div>
+    </div>
+    </body>
+</html>
