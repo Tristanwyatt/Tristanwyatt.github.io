@@ -318,7 +318,7 @@ The Function is incomplete however. It only keeps circles that exit the right si
   - For each `if` statement, write a comment that explains what the conditional statement checks for
     - _Ex_: 'What side of the screen is your circle going off?', and what happens when the condition becomes true ('Where do you want to place the circle once it's off the screen?').
   - Adding these comments before attempting to build your remaining 3 conditional statements will help make your life a bit easier by outlining which conditions you are building for. Don't be the coder that finds out later you were off track simply by not knowing what condition you were testing for!
-- **CHALLENGE:** The circle is centered around its own `x` and `y` position. To find the outer right edge of the circle, we can use the `circle.radius` property like so:
+- **CHALLENGE:** The circle is cenotered around its own `x` and `y` position. To find the outer right edge f the circle, we can use the `circle.radius` property like so:
 
   ```javascript
   var rightEdge = circle.x + circle.radius;
