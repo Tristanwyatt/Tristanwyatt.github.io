@@ -32,7 +32,7 @@ var init = function (window) {
         }
 
         // TODO 3 / 7 : Call the drawCircle() function 
-        for( var nagatoro = 0; nagatoro < 100; nagatoro++){
+        for( var nagatoro = 0; nagatoro <= 1000; nagatoro++){
             drawCircle(circles[nagatoro]);
         }
 
@@ -47,12 +47,12 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
-            for(var mitsuri = 0; mitsuri < 100; mitsuri++){
+            for(var mitsuri = 0; mitsuri <= 1000; mitsuri++){
                 physikz.updatePosition(circles[mitsuri]);
             }
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-           for(var tatsumaki = 0; tatsumaki < 100; tatsumaki++){
+           for(var tatsumaki = 0; tatsumaki <= 1000; tatsumaki++){
             game.checkCirclePosition(circles[tatsumaki]);
            }
 
@@ -75,8 +75,16 @@ var init = function (window) {
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            if(circle.y > canvas.height){
+            if ( circle.x < 0 ){
+                circle.x = canvas.width;
+            }
+            
+            if( circle.y > canvas.height ){
                 circle.y = 0;
+            }
+
+            if( circle.y < 0 ){
+                circle.y = canvas.height;
             }
 
 
