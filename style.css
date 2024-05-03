@@ -10,7 +10,7 @@ body{
   }
   /* navigation menu */
   nav{
-    background: rgb(97, 45, 11);
+    background: rgb(11, 91, 97);
     margin: 0 auto;
     margin-bottom: 20px;
     display: flex;
@@ -38,7 +38,7 @@ body{
   
   /* main container area beneath menu */
   main{
-    background: rgb(128, 0, 0);
+    background: rgb(0, 128, 117);
     display: flex;
     border-radius: 10px;
   }
@@ -66,7 +66,7 @@ body{
     padding: 15px;
   }
   body{
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlXaMLItGWg2RnD-XHRU597MpAbl-24w1maw:https://images.pond5.com/black-and-white-creepy-grunge-footage-055793907_iconl.jpeg&usqp=CAU)
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuYprEKlpwkFJ450nJuuWC0aZoYwqHzIzU8SG4uczGUy04Ag_5JaB_GnsEGNp2nBjmS0I&usqp=CAU)
   }
   
   /* portfolio styles */
@@ -88,7 +88,7 @@ body{
   }
   
   #portfolio li{
-    background-color: rgb(150, 65, 65);
+    background-color: rgb(0, 252, 218);
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;

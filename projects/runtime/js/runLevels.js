@@ -79,8 +79,10 @@ var runLevels = function (window) {
   
       reward.onPlayerCollision = function () {
         game.changeIntegrity(100)
+        reward.shrink();
       };
       reward.onProjectileCollision = function () {
+        game.changeIntegrity(100)
         reward.shrink();
         
       }
