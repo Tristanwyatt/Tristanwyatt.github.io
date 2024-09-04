@@ -207,6 +207,22 @@
   }
 }
         </style>
+        <script>
+          var pass = "ferrisWheel";
+          getPass();
+          
+          function getPass(){
+              var input = prompt("What is the password?");
+              if(input === pass){
+                  console.log("Welcome")
+              }
+              else{
+                  getPass();
+              }
+          }
+          
+          
+          </script>
     </head>
 
     <body>
@@ -215,7 +231,7 @@
             <br>
             <h1>A Ferris Wheel</h1>
             <ul id="nav-ul">
-                <li class="nav-li"><a class="nav-a" href="portfolio.html">← Back To Portfolio</a></li>
+                <li class="nav-li"><a class="nav-a" href="index.html">← Back To Home Page</a></li>
             </ul>
         </nav>
         <main>
