@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dice App</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+   
+  <style>
+    #die{
+        height: 100px;
+        width:100px;
+        background-color: lightblue;
+        position: relative;
+    }
+    body{
+        background-color: rgb(0, 0, 0);
+    }
+
+    #die2 {
+        height: 100px;
+        width:100px;
+        background-color: rgb(0, 120, 160);
+        position: relative;
+        margin-top: 1%;
+    }
+  </style>
+</head>
+<body>
+    <div id="die"></div>
+    <div id="die2"></div>
+</body> 
+<script>
+ 
+ function makeDot(x, y){
+    $('<div>')
+    .css("height", 15)
+    .css("width", 15)
+    .css("background-color", "black")
+    .css("position", "absolute")
+    .css('top', x-6)
+    .css('left', y-6)
+    .css("border-radius", 20)
+    .appendTo("#die");
+}
+
+
+function rollDie(dieID){
+    $('#die').empty();
+        var randomNum = Math.ceil(Math.random() * 6)
+   
+        if (randomNum === 1) {
+            makeDot(50, 50, dieID); // middle middle
+        }
+        else if (randomNum === 2) {
+            makeDot(25, 25, dieID); // top left
+            makeDot(75, 75, dieID); // bottom right
+        }
+        else if (randomNum === 3) {
+            makeDot(25, 25, dieID); // top left
+            makeDot(75, 75, dieID); // bottom right
+            makeDot(50, 50, dieID); // middle middle
+        }
+        else if (randomNum === 4) {
+            makeDot(75, 75, dieID); // bottom right
+            makeDot(25, 25, dieID); // top left
+            makeDot(25, 75, dieID); // bottom left
+            makeDot(75, 25, dieID); // top right
+        }
+        else if (randomNum === 5) {
+            makeDot(50, 50, dieID); // middle middle
+            makeDot(75, 75, dieID); // bottom right
+            makeDot(25, 25, dieID); // top left
+            makeDot(25, 75, dieID); // bottom left
+            makeDot(75, 25, dieID); // top right
+        }
+        else{
+            makeDot(50, 75, dieID);
+            makeDot(25, 25, dieID);
+            makeDot(25, 75, dieID);
+            makeDot(75, 25, dieID);
+            makeDot(50, 25, dieID);
+            makeDot(75, 75, dieID);
+
+        }
+        
+            }
+    
+
+    $("#die").on("click", rollDie);
+
+
+
+    
+function makeDot2(x, y){
+    $('<div>')
+        .css("height", 15)
+        .css("width", 15)
+        .css("background-color", "black")
+        .css("position", "absolute")
+        .css('top', x-6)
+        .css('left', y-6)
+        .css("border-radius", 20)
+        .appendTo("#die2");
+    }
+
+    function rollDie2(dieID2){
+    $('#die2').empty();
+        var randomNum2 = Math.ceil(Math.random() * 6)
+   
+        if (randomNum2 === 1) {
+            makeDot2(50, 50, dieID2); // middle middle
+        }
+        else if (randomNum2 === 2) {
+            makeDot2(25, 25, dieID2); // top left
+            makeDot2(75, 75, dieID2); // bottom right
+        }
+        else if (randomNum2 === 3) {
+            makeDot2(25, 25, dieID2); // top left
+            makeDot2(75, 75, dieID2); // bottom right
+            makeDot2(50, 50, dieID2); // middle middle
+        }
+        else if (randomNum2 === 4) {
+            makeDot2(75, 75, dieID2); // bottom right
+            makeDot2(25, 25, dieID2); // top left
+            makeDot2(25, 75, dieID2); // bottom left
+            makeDot2(75, 25, dieID2); // top right
+        }
+        else if (randomNum2 === 5) {
+            makeDot2(50, 50, dieID2); // middle middle
+            makeDot2(75, 75, dieID2); // bottom right
+            makeDot2(25, 25, dieID2); // top left
+            makeDot2(25, 75, dieID2); // bottom left
+            makeDot2(75, 25, dieID2); // top right
+        }
+        else{
+            makeDot2(50, 75, dieID2);
+            makeDot2(25, 25, dieID2);
+            makeDot2(25, 75, dieID2);
+            makeDot2(75, 25, dieID2);
+            makeDot2(50, 25, dieID2);
+            makeDot2(75, 75, dieID2);
+
+        }
+        
+            }
+
+            $("#die2").on("click", rollDie2);
+
+  </script>
+</html>
